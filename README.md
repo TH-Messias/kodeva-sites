@@ -23,6 +23,9 @@ Só precisa de Node 18+. Os três modelos em HTML puro não têm dependências. 
 | `oficina` | modelo Torque | oficina mecânica, centro automotivo | `vermelho`, `azul`, `laranja`, `verde`, `amarelo` |
 | `lava-rapido` | modelo Lavô | lava-rápido, estética automotiva | `petroleo`, `grafite`, `marinho` |
 | `estetica-premium` | modelo Lumea (React + Vite) | clínica de medicina estética, clínica com equipe | `floresta`, `vinho`, `areia`, `grafite` |
+| `negocio-local` | novo, genérico | categoria OUTROS: pet shop, padaria, escritório, loja... | `cobalto`, `esmeralda`, `terracota`, `ameixa`, `grafite`, `mostarda` |
+
+**Categoria OUTROS:** a prévia sai na hora com o `negocio-local`. Depois do pagamento, o pedido vai para uma fila em que o site é personalizado à mão no Claude Code. Quando um nicho se repete, ele vira um modelo novo em `modelos/`.
 
 Cada modelo fica em `modelos/<nome>/` com:
 

@@ -21,7 +21,7 @@ export function horarioCurto(horario = {}) {
   for (let dia = 1; dia <= 7; dia++) {
     const d = dia % 7;
     const h = horario[d];
-    const chave = h ? h.join('–') : null;
+    const chave = h ? h.join(' às ') : null;
     const ultimo = grupos[grupos.length - 1];
     if (chave && ultimo && ultimo.chave === chave && ultimo.fim === (d + 6) % 7) ultimo.fim = d;
     else if (chave) grupos.push({ chave, ini: d, fim: d });

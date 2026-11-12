@@ -64,3 +64,11 @@ As fotos são caminhos relativos ao próprio `dados.json`.
 - `complemento`, `facebook`, `responsavelTecnico` (aparece no rodapé; para clínica médica, o CFM exige o nome e o CRM do responsável técnico na publicidade).
 - `tipoSchema`: padrão `MedicalClinic`.
 - `fotos`: `{ "hero", "logo", "diferenciais", "galeria": [] }`. Fotos padrão (Unsplash) só entram no topo, nas abas e nos destaques. Equipe e galeria nunca usam foto de banco.
+
+### `negocio-local` (categoria OUTROS)
+- `categoria`: "Pet shop", "Padaria e confeitaria"... aparece na chamada do topo e no SEO.
+- `hero`: `{ "chamada", "titulo", "destaque", "lead", "fotoAlt" }`. O H1 sai como "titulo *destaque*".
+- `servicos[].preco`: opcional, mostrado como "a partir de". O primeiro serviço é o destaque.
+- `diferenciais`, `avaliacoes` (até 3), `faq`, `complemento`, `cnpj`.
+- `fotos`: `{ "hero" (ou "fachada"), "logo", "galeria": [] }`. Sem foto no topo, entra um painel na cor da marca com o nome.
+- `tipoSchema`: padrão `LocalBusiness`. Use o tipo mais específico do schema.org quando houver (`PetStore`, `Bakery`, `AccountingService`...).

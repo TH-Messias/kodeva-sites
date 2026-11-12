@@ -1,0 +1,60 @@
+{
+  "uf": "SP",
+  "whatsapp": "5511900000010",
+  "telefone": "(11) 90000-0010",
+  "nome": "Exemplo Contabilidade",
+  "categoria": "Escritório de contabilidade",
+  "paleta": "grafite",
+  "cidade": "Mogi das Cruzes",
+  "endereco": "Rua Exemplo, 1500",
+  "complemento": "Sala 4",
+  "horario": {
+    "1": [
+      "09:00",
+      "18:00"
+    ],
+    "2": [
+      "09:00",
+      "18:00"
+    ],
+    "3": [
+      "09:00",
+      "18:00"
+    ],
+    "4": [
+      "09:00",
+      "18:00"
+    ],
+    "5": [
+      "09:00",
+      "18:00"
+    ]
+  },
+  "hero": {
+    "titulo": "Contabilidade para",
+    "destaque": "pequenos negócios",
+    "lead": "Abertura de empresa, MEI e imposto de renda, com atendimento direto pelo WhatsApp."
+  },
+  "servicos": [
+    {
+      "nome": "Abertura de empresa",
+      "descricao": "Do CNPJ ao alvará."
+    },
+    {
+      "nome": "MEI",
+      "descricao": "Declaração anual e emissão de guias."
+    },
+    {
+      "nome": "Imposto de renda",
+      "descricao": "Declaração de pessoa física."
+    },
+    {
+      "nome": "Folha de pagamento",
+      "descricao": "Para empresas com até 20 funcionários."
+    },
+    {
+      "nome": "Contabilidade mensal",
+      "descricao": "Simples Nacional e Lucro Presumido."
+    }
+  ]
+}

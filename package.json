@@ -4,6 +4,6 @@
   "type": "module",
   "engines": { "node": ">=18" },
   "scripts": {
-    "exemplos": "node gerador/gerar.mjs estetica-classica exemplos/estetica-classica/dados.json saida/estetica-classica && node gerador/gerar.mjs oficina exemplos/oficina/dados.json saida/oficina && node gerador/gerar.mjs lava-rapido exemplos/lava-rapido/dados.json saida/lava-rapido && node gerador/gerar.mjs estetica-premium exemplos/estetica-premium/dados.json saida/estetica-premium"
+    "exemplos": "node gerador/gerar.mjs estetica-classica exemplos/estetica-classica/dados.json saida/estetica-classica && node gerador/gerar.mjs oficina exemplos/oficina/dados.json saida/oficina && node gerador/gerar.mjs lava-rapido exemplos/lava-rapido/dados.json saida/lava-rapido && node gerador/gerar.mjs estetica-premium exemplos/estetica-premium/dados.json saida/estetica-premium && node gerador/gerar.mjs negocio-local exemplos/negocio-local/petshop.json saida/negocio-local"
   }
 }

@@ -1,0 +1,70 @@
+{
+  "uf": "SP",
+  "whatsapp": "5511900000010",
+  "telefone": "(11) 90000-0010",
+  "nome": "Padaria Exemplo",
+  "categoria": "Padaria e confeitaria",
+  "paleta": "terracota",
+  "cidade": "Santa Isabel",
+  "bairro": "Centro",
+  "endereco": "Av. Exemplo, 300",
+  "horario": {
+    "0": [
+      "06:00",
+      "20:00"
+    ],
+    "1": [
+      "06:00",
+      "20:00"
+    ],
+    "2": [
+      "06:00",
+      "20:00"
+    ],
+    "3": [
+      "06:00",
+      "20:00"
+    ],
+    "4": [
+      "06:00",
+      "20:00"
+    ],
+    "5": [
+      "06:00",
+      "20:00"
+    ],
+    "6": [
+      "06:00",
+      "20:00"
+    ]
+  },
+  "hero": {
+    "titulo": "Pão quente",
+    "destaque": "a cada hora",
+    "lead": "Pães de fermentação natural, bolos e café da manhã no Centro."
+  },
+  "servicos": [
+    {
+      "nome": "Pães do dia",
+      "descricao": "Francês, integral e de fermentação natural."
+    },
+    {
+      "nome": "Encomendas de bolo",
+      "descricao": "Bolos de festa com 48h de antecedência."
+    },
+    {
+      "nome": "Café da manhã",
+      "descricao": "Pão na chapa, café coado e suco."
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "Vocês entregam?",
+      "resposta": "Sim, no Centro, pelo WhatsApp."
+    },
+    {
+      "pergunta": "Aceitam encomenda para o mesmo dia?",
+      "resposta": "Para pães sim; bolos precisam de 48h."
+    }
+  ]
+}
