@@ -1,0 +1,32 @@
+{
+  "nome": "Brilho Exemplo Lava-Rápido",
+  "nomeCurto": "brilho",
+  "paleta": "marinho",
+  "cidade": "Guarulhos",
+  "uf": "SP",
+  "bairro": "Vila Exemplo",
+  "endereco": "Av. Exemplo, 1000",
+  "telefone": "(11) 90000-0002",
+  "whatsapp": "5511900000002",
+  "horario": { "1": ["08:00", "18:00"], "2": ["08:00", "18:00"], "3": ["08:00", "18:00"], "4": ["08:00", "18:00"], "5": ["08:00", "18:00"], "6": ["08:00", "14:00"] },
+  "google": { "nota": 4.9, "total": 58 },
+  "hero": { "chamada": "Lava-rápido & estética automotiva", "titulo": "Seu carro de volta ao brilho.", "lead": "Lavagem, higienização e enceramento com hora marcada." },
+  "promocao": { "titulo": "Lavagem + aspiração", "texto": "Combo com preço especial de segunda a quarta." },
+  "diferenciais": [
+    { "titulo": "Hora marcada", "texto": "Você agenda e não pega fila." },
+    { "titulo": "Produtos neutros", "texto": "Shampoo neutro e microfibra que não risca." },
+    { "titulo": "Capricho nos detalhes", "texto": "Rodas, soleiras e frisos inclusos." }
+  ],
+  "servicos": [
+    { "nome": "Lavagem simples", "descricao": "Externa com espuma, rodas e pneu pretinho.", "preco": "R$ 40" },
+    { "nome": "Lavagem completa", "descricao": "Por dentro e por fora, com aspiração.", "preco": "R$ 80" },
+    { "nome": "Higienização interna", "descricao": "Bancos, carpete e teto.", "preco": "R$ 250" },
+    { "nome": "Enceramento", "descricao": "Proteção e brilho na pintura.", "preco": "R$ 120" }
+  ],
+  "servicosNota": "SUV e caminhonete têm acréscimo. Consulte pelo WhatsApp.",
+  "avaliacoes": [
+    { "texto": "Carro ficou impecável e no horário combinado.", "autor": "Fernanda R.", "detalhe": "Lavagem completa" },
+    { "texto": "Atendimento rápido e preço justo.", "autor": "Diego S." },
+    { "texto": "Higienização tirou todas as manchas do banco.", "autor": "Patrícia L." }
+  ]
+}
