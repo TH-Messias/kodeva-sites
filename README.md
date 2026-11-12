@@ -42,3 +42,7 @@ Com `--previa`, o site sai com uma faixa "Prévia KODEVA Studio", uma marca d'á
 Ver [docs/dados.md](docs/dados.md). Os campos comuns (nome, contato, endereço, horário, serviços, avaliações, fotos) valem para todos os modelos. Cada modelo usa também alguns campos próprios.
 
 Regra para quem preenche (pessoa ou IA): **nada de conteúdo inventado.** Avaliação, nota do Google, anos de experiência, garantia e equipe só entram se vierem da cliente ou do Google. Seção sem dado real não aparece.
+
+## Site de venda
+
+`site-vendas/` é a página que divulga o produto (HTML, CSS e JS puros, sem build). Para publicar, suba a pasta inteira em qualquer hospedagem estática. As imagens dos modelos em `site-vendas/img/` são capturas dos exemplos com fotos de teste: troque pelas capturas de um cliente real assim que houver um com autorização.
