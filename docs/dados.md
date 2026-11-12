@@ -52,3 +52,15 @@ As fotos são caminhos relativos ao próprio `dados.json`.
 - `processo`: `{ "chamada", "titulo", "texto", "itens": [{ "titulo", "texto" }] }`. Sem ele, a seção não aparece.
 - `resultado`: `{ "titulo", "texto" }` ou `false`.
 - `fotos`: `{ "hero", "processo": [a, b], "servicos", "resultado", "chamada" }`. Cada foto ausente usa a imagem padrão do modelo.
+
+### `estetica-premium`
+- `hero`: `{ "chamada", "titulo", "destaque", "final", "lead" }`. O H1 sai como "titulo *destaque*final".
+- `textos.manifesto` + `textos.manifestoFinal`: a frase grande depois do topo. Sem ela, a seção não aparece.
+- `areas`: `[{ "nome", "resumo", "itens": [], "foto" }]`, as abas de tratamento. Sem `areas`, cada serviço vira uma aba e as `tags` viram os itens.
+- `diferenciais`: até 5. O primeiro ganha a foto `fotos.diferenciais`.
+- `destaques`: `[{ "titulo", "texto", "foto" }]`, o carrossel "Os mais procurados".
+- `equipe`: `[{ "nome", "cargo", "registro", "foto", "frase" }]`. **Só profissionais reais, com o registro (CRM, CRBM etc.) informado pela cliente.**
+- `comodidades`: `["Estacionamento no local"]`.
+- `complemento`, `facebook`, `responsavelTecnico` (aparece no rodapé; para clínica médica, o CFM exige o nome e o CRM do responsável técnico na publicidade).
+- `tipoSchema`: padrão `MedicalClinic`.
+- `fotos`: `{ "hero", "logo", "diferenciais", "galeria": [] }`. Fotos padrão (Unsplash) só entram no topo, nas abas e nos destaques. Equipe e galeria nunca usam foto de banco.

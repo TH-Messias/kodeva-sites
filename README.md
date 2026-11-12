@@ -13,7 +13,7 @@ node gerador/gerar.mjs estetica-classica exemplos/estetica-classica/dados.json s
 node gerador/gerar.mjs oficina exemplos/oficina/dados.json saida/mecanica --previa --expira 19/11/2026
 ```
 
-Só precisa de Node 18+. Não há dependências.
+Só precisa de Node 18+. Os três modelos em HTML puro não têm dependências. O `estetica-premium` roda um build do Vite: na primeira vez, o gerador instala as dependências dele sozinho (`npm ci` em `modelos/estetica-premium/app`).
 
 ## Modelos
 
@@ -22,11 +22,13 @@ Só precisa de Node 18+. Não há dependências.
 | `estetica-classica` | site da Belíssima Laser | estética, beleza, depilação, massagem | `dourado`, `rose`, `salvia` |
 | `oficina` | modelo Torque | oficina mecânica, centro automotivo | `vermelho`, `azul`, `laranja`, `verde`, `amarelo` |
 | `lava-rapido` | modelo Lavô | lava-rápido, estética automotiva | `petroleo`, `grafite`, `marinho` |
+| `estetica-premium` | modelo Lumea (React + Vite) | clínica de medicina estética, clínica com equipe | `floresta`, `vinho`, `areia`, `grafite` |
 
 Cada modelo fica em `modelos/<nome>/` com:
 
 - `render.mjs`: recebe os dados e devolve o HTML. Exporta `render`, `fotos` e, se precisar, `validar`.
 - `assets/`: CSS, JS, fontes e imagens padrão, copiados para a raiz do site gerado.
+- No `estetica-premium`, em vez de `render`, existe `build`: ele escreve `app/src/site.json` numa cópia temporária do app e roda o Vite. Para mexer no visual, rode `npm run dev` dentro de `modelos/estetica-premium/app` (ele usa o `src/site.json` de exemplo).
 
 ## Prévia
 

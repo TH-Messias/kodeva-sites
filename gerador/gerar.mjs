@@ -41,7 +41,15 @@ export async function gerar({ modelo, dados, origem, saida, previa = false, expi
       : copiar(valor, chave);
   }
 
-  let html = mod.render(dados, fotos);
+  let html;
+  if (mod.build) {
+    // Modelos com build (React/Vite): o build devolve o HTML e uma pasta com os arquivos gerados
+    const r = await mod.build({ dados, fotos, saida });
+    try { cpSync(r.extras, saida, { recursive: true }); } finally { r.limpar(); }
+    html = r.html;
+  } else {
+    html = mod.render(dados, fotos);
+  }
   if (previa) html = aplicarPrevia(html, { expira });
   writeFileSync(join(saida, 'index.html'), html);
 
