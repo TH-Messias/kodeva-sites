@@ -1,0 +1,36 @@
+{
+  "nome": "Mecânica Exemplo Centro Automotivo",
+  "nomeCurto": "Mecânica Exemplo",
+  "segmento": "Centro Automotivo",
+  "paleta": "azul",
+  "cidade": "Arujá",
+  "uf": "SP",
+  "bairro": "Centro",
+  "endereco": "Rua Exemplo, 456",
+  "telefone": "(11) 90000-0001",
+  "whatsapp": "5511900000001",
+  "horario": { "1": ["07:30", "18:00"], "2": ["07:30", "18:00"], "3": ["07:30", "18:00"], "4": ["07:30", "18:00"], "5": ["07:30", "18:00"], "6": ["08:00", "12:00"] },
+  "google": { "nota": 4.7, "total": 132 },
+  "instagram": [{ "usuario": "mecanicaexemplo" }],
+  "hero": {
+    "chamada": "Revisão, freios e suspensão",
+    "titulo": "Mecânica de confiança em Arujá",
+    "lead": "Diagnóstico com scanner e orçamento aprovado por você antes de qualquer troca."
+  },
+  "servicos": [
+    { "nome": "Troca de óleo e filtros", "descricao": "Óleo com a especificação do manual e troca dos filtros.", "quando": "10.000 km ou 12 meses" },
+    { "nome": "Freios", "descricao": "Pastilhas, discos e fluido de freio." },
+    { "nome": "Suspensão", "descricao": "Amortecedores, buchas e terminais." },
+    { "nome": "Alinhamento e balanceamento", "descricao": "Geometria e balanceamento das rodas." },
+    { "nome": "Injeção eletrônica", "descricao": "Leitura de falhas por scanner e limpeza de bicos." },
+    { "nome": "Ar-condicionado", "descricao": "Higienização e carga de gás." }
+  ],
+  "diferenciais": [
+    { "titulo": "Orçamento antes do serviço", "texto": "Nada é trocado sem a sua aprovação." },
+    { "titulo": "Sala de espera com café", "texto": "Wi-Fi e café enquanto o carro fica pronto." }
+  ],
+  "avaliacoes": [
+    { "texto": "Explicaram tudo e cobraram o combinado.", "autor": "Carlos M.", "estrelas": 5 },
+    { "texto": "Rápidos e honestos. Recomendo.", "autor": "Juliana P.", "estrelas": 5 }
+  ]
+}

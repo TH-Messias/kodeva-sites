@@ -1,0 +1,33 @@
+{
+  "nome": "Studio Aurora Estética",
+  "nomeCurto": "Studio Aurora",
+  "paleta": "rose",
+  "cidade": "Mogi das Cruzes",
+  "uf": "SP",
+  "bairro": "Centro",
+  "endereco": "Rua Exemplo, 123",
+  "telefone": "(11) 90000-0000",
+  "whatsapp": "5511900000000",
+  "horarioTexto": "Seg. a sex., 09:00 às 19:00",
+  "horario": { "1": ["09:00", "19:00"], "2": ["09:00", "19:00"], "3": ["09:00", "19:00"], "4": ["09:00", "19:00"], "5": ["09:00", "19:00"] },
+  "google": { "nota": 4.8, "total": 87, "mapaUrl": "https://www.google.com/maps/search/?api=1&query=Studio+Aurora" },
+  "instagram": [{ "usuario": "studioaurora.exemplo", "rotulo": "Studio Aurora" }],
+  "hero": { "titulo": "Studio", "destaque": "Aurora", "subtitulo": "Estética facial e corporal em Mogi das Cruzes", "lead": "Limpeza de pele, drenagem e protocolos faciais no Centro de Mogi." },
+  "destaquePreco": { "titulo": "Limpeza de pele", "valor": "R$ 120", "sub": "por sessão" },
+  "servicos": [
+    { "nome": "Limpeza de pele", "sub": "A partir de R$ 120", "descricao": "Higienização profunda, extração e hidratação, com produtos escolhidos para o seu tipo de pele.", "tags": ["Poros", "Oleosidade", "Viço"] },
+    { "nome": "Drenagem linfática", "sub": "Sessões de 50 min", "descricao": "Massagem com movimentos suaves que ajudam a reduzir o inchaço e a sensação de pernas pesadas.", "tags": ["Inchaço", "Bem-estar"] },
+    { "nome": "Peeling químico", "descricao": "Renovação da camada superficial da pele para suavizar manchas e textura irregular.", "tags": ["Manchas", "Textura"] }
+  ],
+  "outros": [{ "titulo": "Corpo", "itens": ["Massagem modeladora", "Radiofrequência"] }, { "titulo": "Rosto", "itens": ["Microagulhamento", "Design de sobrancelhas"] }],
+  "diferenciais": ["Atendimento individual", "Produtos profissionais", "Ambiente climatizado"],
+  "avaliacoes": [
+    { "texto": "Atendimento maravilhoso, saí com a pele renovada.\n\nRecomendo demais!", "autor": "Ana, cliente", "estrelas": 5 },
+    { "texto": "Profissional atenciosa e espaço muito limpo.", "autor": "Beatriz, cliente", "estrelas": 5 }
+  ],
+  "faq": [
+    { "pergunta": "Limpeza de pele dói?", "resposta": "A extração pode incomodar um pouco, mas é rápida e feita com cuidado." },
+    { "pergunta": "Preciso agendar?", "resposta": "Sim, o atendimento é com hora marcada pelo WhatsApp." }
+  ],
+  "fotos": { "fachada": "fachada.jpg", "estrutura": "estrutura.jpg", "estruturaLegenda": "Sala de atendimento." }
+}

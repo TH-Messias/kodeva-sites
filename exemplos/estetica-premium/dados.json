@@ -1,0 +1,42 @@
+{
+  "nome": "Clínica Exemplo Estética Avançada",
+  "nomeCurto": "Clínica Exemplo",
+  "paleta": "vinho",
+  "cidade": "Mogi das Cruzes",
+  "uf": "SP",
+  "bairro": "Centro",
+  "endereco": "Av. Exemplo, 2000",
+  "complemento": "Sala 12",
+  "telefone": "(11) 90000-0003",
+  "whatsapp": "5511900000003",
+  "horario": { "1": ["09:00", "19:00"], "2": ["09:00", "19:00"], "3": ["09:00", "19:00"], "4": ["09:00", "19:00"], "5": ["09:00", "19:00"], "6": ["09:00", "13:00"] },
+  "instagram": [{ "usuario": "clinicaexemplo" }],
+  "responsavelTecnico": "Responsável técnica: Dra. Exemplo, CRM-SP 000000",
+  "google": { "nota": 4.9, "total": 214 },
+  "hero": {
+    "chamada": "Estética avançada em Mogi das Cruzes",
+    "titulo": "Sua melhor versão, com",
+    "destaque": "resultado natural",
+    "lead": "Tratamentos faciais e corporais planejados depois de uma avaliação completa."
+  },
+  "textos": {
+    "manifesto": "Cuidado individual para você se sentir bem na própria pele,",
+    "manifestoFinal": "sem parecer outra pessoa."
+  },
+  "servicos": [
+    { "nome": "Facial", "descricao": "Qualidade de pele e rejuvenescimento.", "tags": ["Skinbooster", "Bioestimuladores", "Peelings"] },
+    { "nome": "Corporal", "descricao": "Contorno e firmeza da pele.", "tags": ["Gordura localizada", "Flacidez", "Celulite"] },
+    { "nome": "Capilar", "descricao": "Tratamento da queda a partir do diagnóstico.", "tags": ["MMP capilar", "LED"] }
+  ],
+  "diferenciais": [
+    { "titulo": "Avaliação completa", "texto": "Cada protocolo nasce de uma consulta, não de um pacote pronto." },
+    { "titulo": "Equipamentos com registro na Anvisa", "texto": "Tecnologia escolhida para cada indicação." },
+    { "titulo": "Salas privativas", "texto": "Atendimento sem pressa." }
+  ],
+  "avaliacoes": [
+    { "texto": "Equipe atenciosa e resultado muito natural.", "autor": "Renata A.", "estrelas": 5 },
+    { "texto": "Explicaram cada etapa antes de começar.", "autor": "Lucas F.", "estrelas": 5 },
+    { "texto": "Ambiente lindo e acolhedor.", "autor": "Camila T.", "estrelas": 5 }
+  ],
+  "comodidades": ["Estacionamento no local", "Acessível para cadeira de rodas"]
+}
