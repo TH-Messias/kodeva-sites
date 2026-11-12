@@ -12,6 +12,10 @@
 <meta property="og:description" content="Veja a prévia do seu site antes de pagar. R$ 497, com domínio e hospedagem no primeiro ano.">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:type" content="website">
+<meta property="og:image" content="og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="vitrine.css">
 </head>
@@ -90,64 +94,108 @@
     </div>
   </section>
 
-  <section id="modelos" class="wrap section">
-    <div class="section-head">
-      <p class="eyebrow">Modelos</p>
-      <h2 class="h2">Um modelo para cada ramo</h2>
-      <p class="sub">Cada modelo já vem com as seções que o cliente daquele ramo procura. Seus dados, fotos e cores entram no lugar dos de exemplo. Todos têm uma demonstração que dá para navegar.</p>
+  <section id="modelos" class="section models-sec">
+    <div class="wrap rail-head">
+      <div class="section-head">
+        <p class="eyebrow">Modelos</p>
+        <h2 class="h2">Um modelo para cada ramo</h2>
+        <p class="sub">Cada modelo já vem com as seções que o cliente daquele ramo procura. Toque num deles para navegar pela demonstração no computador ou no celular.</p>
+      </div>
+      <div class="rail-nav">
+        <button type="button" class="rail-btn js-prev" aria-label="Modelos anteriores" disabled><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        <button type="button" class="rail-btn js-next" aria-label="Próximos modelos"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </div>
     </div>
-
-    <div class="models">
-      <article class="model reveal">
-        <figure class="frame"><div class="frame-bar"><i></i><i></i><i></i></div><img src="img/estetica.webp" alt="Prévia do modelo para estética: topo com nome do estúdio, preço da avaliação e serviços" width="720" height="900" loading="lazy"></figure>
-        <div class="model-body">
-          <h3>Estética e beleza</h3>
-          <p>Estúdio, depilação, design de sobrancelha, massagem. Lista de serviços com preço e agendamento pelo WhatsApp.</p>
-          <a class="link" href="ver.html?m=estetica">Ver demonstração</a>
-        </div>
-      </article>
-
-      <article class="model reveal">
-        <figure class="frame"><div class="frame-bar"><i></i><i></i><i></i></div><img src="img/clinica.webp" alt="Prévia do modelo para clínica de estética: áreas de tratamento em abas" width="720" height="900" loading="lazy"></figure>
-        <div class="model-body">
-          <h3>Clínica de estética</h3>
-          <p>Áreas de tratamento em abas, equipe com registro profissional e espaço para o responsável técnico no rodapé.</p>
-          <a class="link" href="ver.html?m=clinica">Ver demonstração</a>
-        </div>
-      </article>
-
-      <article class="model reveal">
-        <figure class="frame"><div class="frame-bar"><i></i><i></i><i></i></div><img src="img/oficina.webp" alt="Prévia do modelo para oficina mecânica: fundo escuro, foto de carro e marcas atendidas" width="720" height="900" loading="lazy"></figure>
-        <div class="model-body">
-          <h3>Oficina mecânica</h3>
-          <p>Serviços com o intervalo de revisão de cada um, marcas atendidas e formulário que já abre o WhatsApp com o carro do cliente.</p>
-          <a class="link" href="ver.html?m=oficina">Ver demonstração</a>
-        </div>
-      </article>
-
-      <article class="model reveal">
-        <figure class="frame"><div class="frame-bar"><i></i><i></i><i></i></div><img src="img/lava-rapido.webp" alt="Prévia do modelo para lava-rápido: carro molhado no topo e chamada para agendar" width="720" height="900" loading="lazy"></figure>
-        <div class="model-body">
-          <h3>Lava-rápido e estética automotiva</h3>
-          <p>Tabela de lavagens com preço "a partir de", promoção da semana e o passo a passo do seu processo.</p>
-          <a class="link" href="ver.html?m=lava-rapido">Ver demonstração</a>
-        </div>
-      </article>
-
-      <article class="model model-outros reveal">
-        <div class="outros-thumbs" aria-hidden="true">
-          <figure class="frame"><img src="img/padaria.webp" alt="" width="720" height="900" loading="lazy"></figure>
-          <figure class="frame"><img src="img/petshop.webp" alt="" width="720" height="900" loading="lazy"></figure>
-          <figure class="frame"><img src="img/escritorio.webp" alt="" width="720" height="900" loading="lazy"></figure>
-        </div>
-        <div class="model-body">
-          <h3>Outro ramo</h3>
-          <p>Pet shop, padaria, contabilidade, loja, salão. A prévia sai num modelo geral, com cores e textos do seu negócio. Depois do pagamento, eu ajusto o site à mão para o seu ramo.</p>
-          <a class="link" href="modelos.html#outros">Ver os exemplos de outros ramos</a>
-        </div>
-      </article>
+    <div class="rail" tabindex="0" role="region" aria-label="Modelos de site, role para o lado">
+      <ul class="rail-track">
+        <li class="rail-item">
+          <a class="rcard spot" href="ver.html?m=estetica">
+            <figure class="rcard-shot"><img src="img/estetica.webp" alt="Página inicial do modelo Estética e beleza" width="720" height="900" loading="lazy" draggable="false"></figure>
+            <div class="rcard-body">
+              <p class="rcard-ramo"><span>01</span>Beleza</p>
+              <h3>Estética e beleza</h3>
+              <p>Serviços com preço, nota do Google e agendamento pelo WhatsApp.</p>
+              <span class="rcard-go">Ver demonstração<svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </li>
+        <li class="rail-item">
+          <a class="rcard spot" href="ver.html?m=clinica">
+            <figure class="rcard-shot"><img src="img/clinica.webp" alt="Página inicial do modelo Clínica de estética" width="720" height="900" loading="lazy" draggable="false"></figure>
+            <div class="rcard-body">
+              <p class="rcard-ramo"><span>02</span>Saúde e estética</p>
+              <h3>Clínica de estética</h3>
+              <p>Tratamentos em abas, equipe com registro e responsável técnico.</p>
+              <span class="rcard-go">Ver demonstração<svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </li>
+        <li class="rail-item">
+          <a class="rcard spot" href="ver.html?m=oficina">
+            <figure class="rcard-shot"><img src="img/oficina.webp" alt="Página inicial do modelo Oficina mecânica" width="720" height="900" loading="lazy" draggable="false"></figure>
+            <div class="rcard-body">
+              <p class="rcard-ramo"><span>03</span>Automotivo</p>
+              <h3>Oficina mecânica</h3>
+              <p>Intervalo de revisão por serviço e formulário que já manda o carro.</p>
+              <span class="rcard-go">Ver demonstração<svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </li>
+        <li class="rail-item">
+          <a class="rcard spot" href="ver.html?m=lava-rapido">
+            <figure class="rcard-shot"><img src="img/lava-rapido.webp" alt="Página inicial do modelo Lava-rápido" width="720" height="900" loading="lazy" draggable="false"></figure>
+            <div class="rcard-body">
+              <p class="rcard-ramo"><span>04</span>Automotivo</p>
+              <h3>Lava-rápido</h3>
+              <p>Tabela de lavagens, promoção da semana e o seu processo.</p>
+              <span class="rcard-go">Ver demonstração<svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </li>
+        <li class="rail-item">
+          <a class="rcard spot" href="ver.html?m=petshop">
+            <figure class="rcard-shot"><img src="img/petshop.webp" alt="Página inicial do modelo Pet shop" width="720" height="900" loading="lazy" draggable="false"></figure>
+            <div class="rcard-body">
+              <p class="rcard-ramo"><span>05</span>Modelo geral</p>
+              <h3>Pet shop</h3>
+              <p>Banho e tosa com hora marcada e status de aberto agora.</p>
+              <span class="rcard-go">Ver demonstração<svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </li>
+        <li class="rail-item">
+          <a class="rcard spot" href="ver.html?m=padaria">
+            <figure class="rcard-shot"><img src="img/padaria.webp" alt="Página inicial do modelo Padaria e confeitaria" width="720" height="900" loading="lazy" draggable="false"></figure>
+            <div class="rcard-body">
+              <p class="rcard-ramo"><span>06</span>Modelo geral</p>
+              <h3>Padaria e confeitaria</h3>
+              <p>Pão do dia, encomendas e o mapa de como chegar.</p>
+              <span class="rcard-go">Ver demonstração<svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </li>
+        <li class="rail-item">
+          <a class="rcard spot" href="ver.html?m=escritorio">
+            <figure class="rcard-shot"><img src="img/escritorio.webp" alt="Página inicial do modelo Escritório e serviços" width="720" height="900" loading="lazy" draggable="false"></figure>
+            <div class="rcard-body">
+              <p class="rcard-ramo"><span>07</span>Modelo geral</p>
+              <h3>Escritório e serviços</h3>
+              <p>Versão sóbria para contabilidade, advocacia e consultoria.</p>
+              <span class="rcard-go">Ver demonstração<svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </li>
+        <li class="rail-item rail-end">
+          <a class="rcard rcard-all" href="modelos.html">
+            <span class="rcard-all-n">7</span>
+            <h3>Ver todos os modelos</h3>
+            <p>Com filtro por ramo e as opções de cor de cada um.</p>
+            <span class="rcard-go">Abrir a vitrine<svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </a>
+        </li>
+      </ul>
     </div>
-    <p class="models-more"><a class="btn btn-ghost" href="modelos.html">Ver todos os modelos</a></p>
+    <div class="wrap rail-foot" aria-hidden="true"><div class="rail-progress"><span class="js-progress"></span></div></div>
   </section>
 
   <section id="como-funciona" class="band">
@@ -182,9 +230,11 @@
   </section>
 
   <section class="wrap section">
+    <div class="feat-wrap">
     <div class="section-head">
       <p class="eyebrow">O que vem no site</p>
       <h2 class="h2">Feito para o cliente achar e chamar</h2>
+      <p class="sub">Tudo isso vem em todos os modelos, sem custo a mais.</p>
     </div>
     <ul class="features">
       <li class="reveal"><svg aria-hidden="true"><use href="#s-chat"/></svg><h3>Botão de WhatsApp</h3><p>Em todas as telas, com a mensagem já escrita. O cliente toca e cai na sua conversa.</p></li>
@@ -194,6 +244,7 @@
       <li class="reveal"><svg aria-hidden="true"><use href="#s-bolt"/></svg><h3>Abre rápido</h3><p>Site estático, sem plugin nem painel pesado. Carrega rápido mesmo no 4G fraco.</p></li>
       <li class="reveal"><svg aria-hidden="true"><use href="#s-globe"/></svg><h3>Endereço próprio</h3><p>seunegocio.com.br em vez de um link de rede social. Domínio e hospedagem do primeiro ano estão no preço.</p></li>
     </ul>
+    </div>
 
     <div class="honest reveal">
       <h3>Nada de conteúdo inventado</h3>
@@ -208,7 +259,7 @@
         <h2 class="h2">Um preço, sem mensalidade no primeiro ano</h2>
         <p class="sub">Você paga uma vez pelo site. Domínio e hospedagem do primeiro ano vão de presente. A partir do segundo ano, a manutenção sai por R$ 79,90 por ano, menos de R$ 7 por mês.</p>
       </div>
-      <div class="price-card reveal">
+      <div class="price-card spot reveal">
         <p class="price-label">Site pronto</p>
         <p class="price"><small>R$</small>497</p>
         <p class="price-note">pagamento único, depois de aprovar a prévia</p>
@@ -265,7 +316,7 @@
   </section>
 
   <section class="wrap section final">
-    <div class="final-in reveal">
+    <div class="final-in spot reveal">
       <h2>Quer ver como fica o site do seu negócio?</h2>
       <p>Manda o nome e o link do Google no WhatsApp. A prévia não custa nada.</p>
       <a class="btn js-wa" href="https://wa.me/5511941066262?text=Ol%C3%A1%21%20Quero%20ver%20a%20pr%C3%A9via%20do%20site%20do%20meu%20neg%C3%B3cio.%0ANome%20do%20neg%C3%B3cio%3A%20%0ALink%20do%20Google%3A%20" target="_blank" rel="noopener" data-msg="geral">
