@@ -136,7 +136,7 @@ ${lista(nav, ([id, rotulo]) => `        <li><a href="#${id}">${rotulo}</a></li>`
     <div class="wrap hero">
       <div class="hero-text">
         <h1>${esc(d.hero?.titulo || d.nomeCurto || d.nome)}${se(d.hero?.destaque, ` <em>${esc(d.hero?.destaque)}</em>`)} <span class="h1-sub">${esc(d.hero?.subtitulo || `Estética em ${d.cidade}`)}</span></h1>
-        ${se(d.hero?.lead, `<p class="lead">${esc(d.hero.lead)}</p>`)}
+        ${se(d.hero?.lead, `<p class="lead">${esc(d.hero?.lead)}</p>`)}
         <div class="hero-actions">
           <a class="btn btn-primary" href="${wa}" data-link="whatsapp" target="_blank" rel="noopener">Agendar avaliação</a>
           ${se(insta[0], `<a class="btn btn-outline" href="https://instagram.com/${esc(insta[0]?.usuario)}" data-link="instagram0" target="_blank" rel="noopener">Ver no Instagram</a>`)}
@@ -156,7 +156,7 @@ ${lista(nav, ([id, rotulo]) => `        <li><a href="#${id}">${rotulo}</a></li>`
           <span class="fact-s">${esc(g.total)} avaliações</span>
         </a></li>`)}
         ${se(d.destaquePreco, fato(d.destaquePreco?.titulo, esc(d.destaquePreco?.valor), d.destaquePreco?.sub))}
-        ${se(d.horarioTexto, fato('Horário', esc(d.horarioTexto.split(',')[0]), d.horarioTexto.split(',').slice(1).join(',').trim(), '<span class="status-horario" data-status-horario hidden></span>'))}
+        ${se(d.horarioTexto, fato('Horário', esc(String(d.horarioTexto ?? '').split(',')[0]), String(d.horarioTexto ?? '').split(',').slice(1).join(',').trim(), '<span class="status-horario" data-status-horario hidden></span>'))}
         ${fato('Endereço', esc(d.bairro ? `${d.bairro}, ${d.cidade}` : d.cidade), d.endereco)}
       </ul>
     </div>
@@ -299,7 +299,7 @@ ${lista(insta, (i, n) => `        <li><a class="rede" href="https://instagram.co
       <div class="foot-grid">
         <div>
           <p class="foot-brand">${esc(d.nome)}</p>
-          ${se(d.hero?.lead, `<p>${esc(d.hero.lead)}</p>`)}
+          ${se(d.hero?.lead, `<p>${esc(d.hero?.lead)}</p>`)}
         </div>
         <ul>
           <li>${esc(d.endereco)}</li>

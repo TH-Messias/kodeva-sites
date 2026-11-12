@@ -29,9 +29,11 @@
   new IntersectionObserver(([e]) => {
     topbar.classList.toggle('rolou', !e.isIntersecting);
   }).observe(document.getElementById('topo'));
-  new IntersectionObserver(([e]) => {
-    flutuante.classList.toggle('on', !e.isIntersecting);
-  }, { threshold: 0 }).observe(hero);
+  if (hero) {
+    new IntersectionObserver(([e]) => {
+      flutuante.classList.toggle('on', !e.isIntersecting);
+    }, { threshold: 0 }).observe(hero);
+  } else if (flutuante) flutuante.classList.add('on');
 
   const io = new IntersectionObserver((entradas) => {
     entradas.forEach((e) => {

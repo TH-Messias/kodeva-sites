@@ -78,3 +78,14 @@ body{padding-bottom:42px}</style>`;
     .replace('</head>', css + '\n</head>')
     .replace(/<\/body>/, `<div class="kodeva-previa-marca" aria-hidden="true"></div><div class="kodeva-previa" role="note">${esc(aviso)}</div>\n</body>`);
 }
+
+// Demonstração da vitrine: faixa avisando que nome, dados e fotos são ilustrativos, e noindex.
+export function aplicarDemo(html) {
+  const aviso = 'Site de demonstração KODEVA · nome, dados e fotos são ilustrativos';
+  const css = `<style>.kodeva-demo{position:fixed;left:0;right:0;bottom:0;z-index:2147483647;background:#111;color:#fff;font:600 12px/1.3 system-ui,sans-serif;text-align:center;padding:8px 16px;letter-spacing:.02em}body{padding-bottom:34px}</style>`;
+  return html
+    .replace('<head>', '<head>\n  <meta name="robots" content="noindex,nofollow">')
+    .replace(/<link rel="canonical"[^>]*>/, '')
+    .replace('</head>', css + '\n</head>')
+    .replace(/<\/body>/, `<div class="kodeva-demo" role="note">${esc(aviso)}</div>\n</body>`);
+}

@@ -9,12 +9,12 @@
 import { readFileSync, mkdirSync, cpSync, writeFileSync, existsSync, readdirSync, rmSync } from 'node:fs';
 import { dirname, join, resolve, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { validarBase, aplicarPrevia } from './lib.mjs';
+import { validarBase, aplicarPrevia, aplicarDemo } from './lib.mjs';
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const MODELOS = readdirSync(join(RAIZ, 'modelos')).filter((m) => existsSync(join(RAIZ, 'modelos', m, 'render.mjs')));
 
-export async function gerar({ modelo, dados, origem, saida, previa = false, expira }) {
+export async function gerar({ modelo, dados, origem, saida, previa = false, expira, demo = false }) {
   if (!MODELOS.includes(modelo)) throw new Error(`Modelo "${modelo}" não existe. Use: ${MODELOS.join(', ')}`);
   const pasta = join(RAIZ, 'modelos', modelo);
   const mod = await import(join(pasta, 'render.mjs'));
@@ -51,9 +51,12 @@ export async function gerar({ modelo, dados, origem, saida, previa = false, expi
     html = mod.render(dados, fotos);
   }
   if (previa) html = aplicarPrevia(html, { expira });
+  else if (demo) html = aplicarDemo(html);
   writeFileSync(join(saida, 'index.html'), html);
 
-  if (!previa) {
+  if (demo) {
+    // a vitrine controla o robots.txt da raiz
+  } else if (!previa) {
     writeFileSync(join(saida, 'robots.txt'), 'User-agent: *\nAllow: /\n' + (dados.dominio ? `Sitemap: https://${dados.dominio}/sitemap.xml\n` : ''));
     if (dados.dominio) {
       writeFileSync(join(saida, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://${dados.dominio}/</loc></url></urlset>\n`);

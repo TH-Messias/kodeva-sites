@@ -46,3 +46,11 @@ Regra para quem preenche (pessoa ou IA): **nada de conteúdo inventado.** Avalia
 ## Site de venda
 
 `site-vendas/` é a página que divulga o produto (HTML, CSS e JS puros, sem build). Para publicar, suba a pasta inteira em qualquer hospedagem estática. As imagens dos modelos em `site-vendas/img/` são capturas dos exemplos com fotos de teste: troque pelas capturas de um cliente real assim que houver um com autorização.
+
+### Vitrine de modelos
+
+`site-vendas/modelos.html` lista os modelos com filtro por ramo. `site-vendas/ver.html?m=<id>` abre a demonstração navegável em tela de computador ou de celular. As demonstrações ficam em `site-vendas/demos/` e saem de `npm run demos`, com a faixa "nome, dados e fotos são ilustrativos". Prompts para gerar as fotos das demonstrações: [docs/fotos-demo.md](docs/fotos-demo.md).
+
+## Testes
+
+`npm test` (node:test, sem dependências). Cobre validação, prévia, demonstração e a regra de não inventar conteúdo em cada modelo HTML.
